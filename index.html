@@ -202,55 +202,73 @@
         <form NAME="form1">
             <table>
                 <tr>
-                    <td> <B>Dealer: </B></td>
-                    <td> <img border=0 src="blank.gif" height=136 width=106></td>
-                    <td> <img border=0 src="blank.gif" height=136 width=106></td>
-                    <td> <img border=0 src="blank.gif" height=136 width=106></td>
-                    <td> <img border=0 src="blank.gif" height=136 width=106></td>
-                    <td> <img border=0 src="blank.gif" height=136 width=106></td>
-                    <td> <img border=0 src="blank.gif" height=136 width=106></td>
-                    <td> </td>
+                    <td> <strong>Dealer: </strong></td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
                 </tr>
                 <tr>
-                    <td> <B>Player: <B>
-                                </td>
-                                <td> 
-                                    <img src="blank.gif" height=136 width=106>
-                                </td>
-                                <td> <img src="blank.gif" height=136 width=106>
-                                </td>
-                                <td> <img src="blank.gif" height=136 width=106>
-                                </td>
-                                <td> <img src="blank.gif" height=136 width=106>
-                                </td>
-                                <td> <img src="blank.gif" height=136 width=106>
-                                </td>
-                                <td> 
-                                    <img src="blank.gif" height=136 width=106 />
-                                </td>
-                                </tr>
-                                <tr>
-                                    <td> <B>Dealer Score:</B><BR>
-                                        <input TYPE="TEXT" SIZE=10 NAME="dealer" VALUE="0">
-                                    </td>
-                                    <td> 
-                                        <B>Player Score:</B><BR>
-                                        <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0">
-                                    </td>
-                                    <td> <input TYPE="BUTTON" VALUE="      Stand      " onClick="stand();"></td>
-                                    <td> <input TYPE="BUTTON" VALUE="         Hit         " onClick="hit();"></td>
-                                    <td> <a href="#" onClick="newGame();"
-                                            onMouseOver = "window.status = 'Deal a new hand.';
-                                                    return true;
-                                            "
-                                            onMouseOut = "window.status = '';">
-                                            <img border=0 src="deal.gif" height=50 width=106></a>
-                                    </td>
-                                    <td> <B>Game Result:</B><BR>
-                                        <input TYPE="TEXT" SIZE=10 NAME="result" VALUE=""/>
-                                    </td>
-                                </tr>
-                                </table>
-                                </form>
-                                </body>
-                                </html>
+                    <td>
+                        <strong>Player: </strong>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                    <td>
+                        <img src="blank.gif" alt="card"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <B>Dealer Score:</B><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="dealer" VALUE="0">
+                    </td>
+                    <td> 
+                        <B>Player Score:</B><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0">
+                    </td>
+                    <td> <input TYPE="BUTTON" VALUE="      Stand      " onClick="stand();"></td>
+                    <td> <input TYPE="BUTTON" VALUE="         Hit         " onClick="hit();"></td>
+                    <td> <a href="#" onClick="newGame();"
+                            onMouseOver = "window.status = 'Deal a new hand.';
+                                    return true;
+                            "
+                            onMouseOut = "window.status = '';">
+                            <img src="deal.gif" />
+                        </a>
+                    </td>
+                    <td> <B>Game Result:</B><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="result" VALUE=""/>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
