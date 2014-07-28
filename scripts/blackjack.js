@@ -10,7 +10,7 @@ function Card(num, suit) {
     this.fname = fname;
 }
 function fname() {
-    return this.num + this.suit + ".gif";
+    return this.num + this.suit + ".svg";
 }
 // The function fname() makes a filename for an image.
 // The filenames are a concatenation of card number and suit
