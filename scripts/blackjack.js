@@ -62,11 +62,11 @@ function newGame() {
     // Deal and Display cards
 
     dealer_hand[ 0 ] = deck.dealCard();   // This is the hole card.
-    document.images[0].src = "blank.gif"; // The hole card is not shown
+    document.images[0].src = "images/blank.svg"; // The hole card is not shown
     dealer_hand[ 1 ] = deck.dealCard();
     document.images[ 1 ].src = dealer_hand[ 1 ].fname();
     for (i = 2; i < 6; i++) {
-        document.images[i].src = "blank.gif";
+        document.images[i].src = "images/blank.svg";
     }
 
     player_hand[ 0 ] = deck.dealCard();
@@ -74,7 +74,7 @@ function newGame() {
     player_hand[ 1 ] = deck.dealCard();
     document.images[ 7 ].src = player_hand[ 1 ].fname();
     for (i = 8; i < 12; i++) {
-        document.images[i].src = "blank.gif";
+        document.images[i].src = "images/blank.svg";
     }
 
     // Reset the form fields and the state variables
