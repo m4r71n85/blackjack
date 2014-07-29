@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Black Jack - Eirene</title>
-		<link href="styles/style.css" rel="stylesheet" />
+        <link href="styles/style.css" rel="stylesheet" />
     </head>
 
     <body>
-		<img src="images/softuni-logo.jpg" class="logo" />
+        <img src="images/softuni-logo.jpg" class="logo" />
         <h1>Team Eirene</h1>
         <hr>
         <form NAME="form1">
@@ -63,29 +63,22 @@
                         <div class="score">Player Score:</div><BR>
                         <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0" >
                     </td>
-                    <td> <input class="buttons" TYPE="BUTTON" VALUE="Stand" onClick="stand()" class="button"></td>
-                    <td> <input class="buttons" TYPE="BUTTON" VALUE="Hit" onClick="hit()" class="button"></td>
-                    <td> <a class="buttons" href="#" onClick="newGame();"
-
-					<td></td>
-					<td><div class="result">Game Result:</div><BR>
-                        <input TYPE="TEXT" SIZE=10 NAME="result" VALUE="" />
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="Stand" onClick="stand()" class="operation"></td>
+                    <td> <input type="button" value="Hit" onClick="hit()" class="operation"></td>
+                    <td> <input type="button" value="Deal" onClick="newGame();"  class="operation">
                     </td>
-				<tr>
-                    <td> <input TYPE="BUTTON" VALUE="Stand" onClick="stand()" ></td>
-                    <td> <input TYPE="BUTTON" VALUE="Hit" onClick="hit()" ></td>
-                    <td> <a href="#" onClick="newGame();"
-                            onMouseOver = "window.status = 'Deal a new hand.';
-                                    return true;"
-                            onMouseOut = "window.status = '';">
-                            <img src="deal.gif" alt="Deal" />
-                        </a>
-                    </td>
-					<td></td>
+                    <td></td>
                     <td><b>Game Result:</b><BR>
                         <input TYPE="TEXT" SIZE=10 NAME="result" VALUE="" class= "inputText"/>
                     </td>
-				</tr>
+                </tr>
             </table>
         </form>
         <script src="scripts/blackjack.js" type="text/javascript"></script>

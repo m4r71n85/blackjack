@@ -1,106 +1,97 @@
 /* CSS Document */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
 body {
-	width: 80%;
-	background-image:url("../images/background.jpg") ;
-	background-repeat: no-repeat;
-	background-size: 80% ;
-	font-family: Calibri;
+    width: 80%;
+    background-image:url("../images/background.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 80% ;
+    font-family: Calibri;
 }
 
 b{
-	color: white;
+    color: white;
 }
 
 .buttons{
-	color: white;
-	margin-top: 20px;
+    color: white;
+    margin-top: 20px;
 }
 
 .logo{
-		display: inline-block ;
+    display: inline-block ;
 }
 
 
 h1{
-	display: inline-block ;
-	color: white ;
-	font-size: 300% ;
-	padding-left: 180px ;
-	font-family: Calibri;
+    display: inline-block ;
+    color: white ;
+    font-size: 300% ;
+    padding-left: 180px ;
+    font-family: Calibri;
 }
 .dealer{
-	color: white ;
-	font-size: 250% ;
-	font-family: Calibri;
-	padding-left: 20px ;
-	padding-right: 20px;
-	font-weight: bold ;
+    color: white ;
+    font-size: 250% ;
+    font-family: Calibri;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-weight: bold ;
 }
 .player{
-	color: white ;
-	font-size: 250% ;
-	font-family: Calibri;
-	padding-left: 20px ;
-	padding-right: 20px;
-	font-weight: bold ;
+    color: white ;
+    font-size: 250% ;
+    font-family: Calibri;
+    padding-left: 20px ;
+    padding-right: 20px;
+    font-weight: bold ;
 }
 .card{
-	
-	padding-left: 20px ;
-	padding-top:20px ;
-	padding-bottom: 20px ;
+
+    padding-left: 20px ;
+    padding-top:20px ;
+    padding-bottom: 20px ;
 }
 input[type="TEXT"]{
-	display: inline-block ;
-	margin-left: 20px ;
-	width : 100px ;
-	height: 30px ;
-	border-radius : 10px ;
-	
+    display: inline-block ;
+    margin-left: 20px ;
+    width : 100px ;
+    height: 30px ;
+    border-radius : 10px ;
+
 }
 input[type="BUTTON"]{
-	margin-left: 20px;
-	display: inline-block ;
-	width : 120px ;
-	height: 30px ;
-	border-radius: 10px ;
-	margin-top: 20px ;
+    margin-left: 20px;
+    display: inline-block ;
+    width : 120px ;
+    height: 30px ;
+    border-radius: 10px ;
+    margin-top: 20px ;
 }
 input[value="0"]{
-	font-size: 20px ;
-	font-weight: bold ;
-	color: #F03900 ;
-	padding-left: 10px ;
-	
+    font-size: 20px ;
+    font-weight: bold ;
+    color: #F03900 ;
+    padding-left: 10px ;
+
 }
-input[value="Stand"]{
-	font-size: 20px ;
-	font-weight: bold ;
-	color: #F03900 ;
-	padding-left: 10px ;
-	
-}
-input[value="Hit"]{
-	font-size: 20px ;
-	font-weight: bold ;
-	color: #F03900 ;
-	padding-left: 10px ;
-	
+input.operation{
+    font-size: 20px ;
+    font-weight: bold ;
+    color: #F03900 ;
 }
 .result{
-	font-weight: bold ;
-	color: white ;
-	padding-left: 15px ;
-	font-size:20px ;
+    font-weight: bold ;
+    color: white ;
+    padding-left: 15px ;
+    font-size:20px ;
 }
 .score{
-	font-weight: bold ;
-	color: white ;
-	padding-left: 20px ;
-	font-size:20px ;
+    font-weight: bold ;
+    color: white ;
+    padding-left: 20px ;
+    font-size:20px ;
 }

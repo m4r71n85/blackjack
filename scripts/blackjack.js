@@ -83,7 +83,7 @@ function newGame() {
     document.form1.result.value = "";
     document.form1.player.value = score(player_hand);
     game_over = false;
-
+    return false;
 } // end function newGame()
 
 
