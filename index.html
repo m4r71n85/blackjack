@@ -13,22 +13,22 @@
             <table>
                 <tr>
                     <td class = "dealer"> Dealer: </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
                 </tr>
@@ -36,46 +36,47 @@
                     <td class= "player">
                         Player: 
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
-                    <td>
+                    <td class="card">
                         <img src="images/blank.svg" alt="card" width="100" />
                     </td>
                 </tr>
                 <tr>
                     <td> <B>Dealer Score:</B><BR>
-                        <input TYPE="TEXT" SIZE=10 NAME="dealer" VALUE="0">
+                        <input TYPE="TEXT" SIZE=10 NAME="dealer" VALUE="0" class = "inputText">
                     </td>
                     <td> 
                         <B>Player Score:</B><BR>
-                        <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0">
+                        <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0" class = "inputText">
                     </td>
-                    <td> <input TYPE="BUTTON" VALUE="      Stand      " onClick="stand();"></td>
-                    <td> <input TYPE="BUTTON" VALUE="         Hit         " onClick="hit();"></td>
+                    <td> <input TYPE="BUTTON" VALUE="Stand" onClick="stand()" class="button"></td>
+                    <td> <input TYPE="BUTTON" VALUE="Hit" onClick="hit()" class="button"></td>
                     <td> <a href="#" onClick="newGame();"
                             onMouseOver = "window.status = 'Deal a new hand.';
                                     return true;"
                             onMouseOut = "window.status = '';">
-                            <img src="deal.gif" alt="Deal"/>
+                            <img src="deal.gif" alt="Deal" />
                         </a>
                     </td>
-                    <td> <B>Game Result:</B><BR>
-                        <input TYPE="TEXT" SIZE=10 NAME="result" VALUE=""/>
+					<td></td>
+                    <td><div class="result">Game Result:</div><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="result" VALUE="" class= "inputText"/>
                     </td>
-                    <td></td>
+                   
                 </tr>
             </table>
         </form>

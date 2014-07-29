@@ -39,9 +39,49 @@ h1{
 	padding-right: 20px;
 	font-weight: bold ;
 }
-td{
+.card{
 	
 	padding-left: 20px ;
 	padding-top:20px ;
 	padding-bottom: 20px ;
+}
+input[type="TEXT"]{
+	display: inline-block ;
+	margin-left: 20px ;
+	width : 100px ;
+	height: 30px ;
+	border-radius : 10px ;
+	
+}
+input[type="BUTTON"]{
+	margin-left: 20px;
+	display: inline-block ;
+	width : 120px ;
+	height: 30px ;
+	border-radius: 10px ;
+}
+input[value="0"]{
+	font-size: 20px ;
+	font-weight: bold ;
+	color: #F03900 ;
+	padding-left: 10px ;
+	
+}
+input[value="Stand"]{
+	font-size: 20px ;
+	font-weight: bold ;
+	color: #F03900 ;
+	padding-left: 10px ;
+	
+}
+input[value="Hit"]{
+	font-size: 20px ;
+	font-weight: bold ;
+	color: #F03900 ;
+	padding-left: 10px ;
+	
+}
+.result{
+	color: white ;
+	font-weight: bold ;
 }
