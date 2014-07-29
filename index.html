@@ -56,16 +56,27 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> <B>Dealer Score:</B><BR>
-                        <input TYPE="TEXT" SIZE=10 NAME="dealer" VALUE="0" class = "inputText">
+                    <td> <div class="score"> Dealer Score:</div><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="dealer" VALUE="0" >
                     </td>
                     <td> 
-                        <B>Player Score:</B><BR>
-                        <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0" class = "inputText">
+                        <div class="score">Player Score:</div><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0" >
                     </td>
+<<<<<<< HEAD
                     <td> <input class="buttons" TYPE="BUTTON" VALUE="Stand" onClick="stand()" class="button"></td>
                     <td> <input class="buttons" TYPE="BUTTON" VALUE="Hit" onClick="hit()" class="button"></td>
                     <td> <a class="buttons" href="#" onClick="newGame();"
+=======
+					<td></td>
+					<td><div class="result">Game Result:</div><BR>
+                        <input TYPE="TEXT" SIZE=10 NAME="result" VALUE="" />
+                    </td>
+				<tr>
+                    <td> <input TYPE="BUTTON" VALUE="Stand" onClick="stand()" ></td>
+                    <td> <input TYPE="BUTTON" VALUE="Hit" onClick="hit()" ></td>
+                    <td> <a href="#" onClick="newGame();"
+>>>>>>> origin/master
                             onMouseOver = "window.status = 'Deal a new hand.';
                                     return true;"
                             onMouseOut = "window.status = '';">
@@ -73,11 +84,16 @@
                         </a>
                     </td>
 					<td></td>
+<<<<<<< HEAD
                     <td><b>Game Result:</b><BR>
                         <input TYPE="TEXT" SIZE=10 NAME="result" VALUE="" class= "inputText"/>
                     </td>
+=======
+				</tr>
+                    
+>>>>>>> origin/master
                    
-                </tr>
+               
             </table>
         </form>
         <script src="scripts/blackjack.js" type="text/javascript"></script>
