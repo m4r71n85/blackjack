@@ -63,9 +63,9 @@
                         <B>Player Score:</B><BR>
                         <input TYPE="TEXT" SIZE=10 NAME="player" VALUE="0" class = "inputText">
                     </td>
-                    <td> <input TYPE="BUTTON" VALUE="Stand" onClick="stand()" class="button"></td>
-                    <td> <input TYPE="BUTTON" VALUE="Hit" onClick="hit()" class="button"></td>
-                    <td> <a href="#" onClick="newGame();"
+                    <td> <input class="buttons" TYPE="BUTTON" VALUE="Stand" onClick="stand()" class="button"></td>
+                    <td> <input class="buttons" TYPE="BUTTON" VALUE="Hit" onClick="hit()" class="button"></td>
+                    <td> <a class="buttons" href="#" onClick="newGame();"
                             onMouseOver = "window.status = 'Deal a new hand.';
                                     return true;"
                             onMouseOut = "window.status = '';">
@@ -73,7 +73,7 @@
                         </a>
                     </td>
 					<td></td>
-                    <td><div class="result">Game Result:</div><BR>
+                    <td><b>Game Result:</b><BR>
                         <input TYPE="TEXT" SIZE=10 NAME="result" VALUE="" class= "inputText"/>
                     </td>
                    
