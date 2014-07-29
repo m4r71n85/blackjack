@@ -1,0 +1,47 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+
+}
+body {
+	width: 80%;
+	background-image:url("images/background.jpg") ;
+	background-repeat: no-repeat;
+	background-size: 80% ;
+	font-family: Calibri;
+}
+.logo{
+		display: inline-block ;
+}
+
+
+h1{
+	display: inline-block ;
+	color: white ;
+	font-size: 300% ;
+	padding-left: 180px ;
+	font-family: Calibri;
+}
+.dealer{
+	color: white ;
+	font-size: 250% ;
+	font-family: Calibri;
+	padding-left: 20px ;
+	padding-right: 20px;
+	font-weight: bold ;
+}
+.player{
+	color: white ;
+	font-size: 250% ;
+	font-family: Calibri;
+	padding-left: 20px ;
+	padding-right: 20px;
+	font-weight: bold ;
+}
+td{
+	
+	padding-left: 20px ;
+	padding-top:20px ;
+	padding-bottom: 20px ;
+}
