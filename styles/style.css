@@ -5,10 +5,8 @@
 
 }
 body {
-    width: 80%;
     background-image:url("../images/background.jpg") ;
     background-repeat: no-repeat;
-    background-size: 80% ;
     font-family: Calibri;
 }
 

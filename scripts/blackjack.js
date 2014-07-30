@@ -16,7 +16,6 @@ function fname() {
 // The filenames are a concatenation of card number and suit
 // Ace = 1 and King = 13
 
-
 // Constructor for Deck Object
 function Deck() {
     this.cards = new Array(52);
@@ -31,6 +30,7 @@ function Deck() {
     this.shuffle = shuffle;
     this.dealCard = dealCard;
 }
+
 function shuffle() {
     for (i = 1; i < 1000; i++) {
         // switch two randomly selected cards
@@ -42,6 +42,7 @@ function shuffle() {
     }
     this.next_card = 0;
 }
+
 function dealCard() {
     return this.cards[ this.next_card++ ];
 }
@@ -62,19 +63,19 @@ function newGame() {
     // Deal and Display cards
 
     dealer_hand[ 0 ] = deck.dealCard();   // This is the hole card.
-    document.images[0].src = "images/blank.svg"; // The hole card is not shown
+    $(".cards")[0].src = "images/blank.svg"; // The hole card is not shown
     dealer_hand[ 1 ] = deck.dealCard();
-    document.images[ 1 ].src = dealer_hand[ 1 ].fname();
+    $(".cards")[ 1 ].src = dealer_hand[ 1 ].fname();
     for (i = 2; i < 6; i++) {
-        document.images[i].src = "images/blank.svg";
+        $(".cards")[i].src = "images/blank.svg";
     }
 
     player_hand[ 0 ] = deck.dealCard();
-    document.images[ 6 ].src = player_hand[ 0 ].fname();
+    $(".cards")[ 6 ].src = player_hand[ 0 ].fname();
     player_hand[ 1 ] = deck.dealCard();
-    document.images[ 7 ].src = player_hand[ 1 ].fname();
+    $(".cards")[ 7 ].src = player_hand[ 1 ].fname();
     for (i = 8; i < 12; i++) {
-        document.images[i].src = "images/blank.svg";
+        $(".cards")[i].src = "images/blank.svg";
     }
 
     // Reset the form fields and the state variables
@@ -95,11 +96,11 @@ function hit() {
     } else {
         new_card = player_hand.length;
         player_hand[ new_card ] = deck.dealCard();
-        document.images[ new_card + 6 ].src = player_hand[ new_card ].fname();
+        $(".cards")[ new_card + 6 ].src = player_hand[ new_card ].fname();
         total = score(player_hand);
         if (total > 21) {  // Busted, game over.
             document.form1.player.value = total + "  busted";
-            document.images[ 0 ].src = dealer_hand[ 0 ].fname(); // reveal the dealer hole card
+            $(".cards")[ 0 ].src = dealer_hand[ 0 ].fname(); // reveal the dealer hole card
             document.form1.dealer.value = score(dealer_hand);
             winner();
             game_over = true;
@@ -117,11 +118,11 @@ function stand() {
         window.status = "Game over.  Click the Deal button to start a new hand."
     } else {
 
-        document.images[ 0 ].src = dealer_hand[ 0 ].fname(); // reveal the dealer hole card
+        $(".cards")[ 0 ].src = dealer_hand[ 0 ].fname(); // reveal the dealer hole card
         while (score(dealer_hand) < 17) {  // Dealer stands on soft 17
             new_card = dealer_hand.length;
             dealer_hand[ new_card ] = deck.dealCard();
-            document.images[ new_card ].src = dealer_hand[ new_card ].fname();
+            $(".cards")[ new_card ].src = dealer_hand[ new_card ].fname();
         }
 
         total = score(dealer_hand);
