@@ -8,6 +8,7 @@ body {
     background-image:url("../images/background.jpg") ;
     background-repeat: no-repeat;
     font-family: Calibri;
+	background-size: 80%
 }
 
 b{
@@ -76,16 +77,23 @@ input[value="0"]{
     padding-left: 10px ;
 
 }
+input[value=""]{
+	font-size: 17px ;
+    font-weight: bold ;
+    color: #F03900 ;
+}
 input.operation{
     font-size: 20px ;
     font-weight: bold ;
     color: #F03900 ;
 }
 .result{
-    font-weight: bold ;
+
     color: white ;
-    padding-left: 15px ;
-    font-size:20px ;
+     font-weight: bold ;
+	 padding-left: 20px ;
+	 padding-bottom: 5px ;
+   
 }
 .score{
     font-weight: bold ;
